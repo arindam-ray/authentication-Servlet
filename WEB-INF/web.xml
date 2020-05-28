@@ -1,0 +1,33 @@
+<web-app>
+ <display-name>Servlet - Example of Authentication Module</display-name>
+ <description>This project checks the username and password </description>
+ 
+ <welcome-file-list>
+ 	<welcome-file>index.html</welcome-file>
+ </welcome-file-list>
+ 
+ <servlet>
+	 <servlet-name>Login</servlet-name>
+	 <servlet-class>Validation</servlet-class>
+ </servlet>
+
+  <servlet-mapping>
+	 <servlet-name>Login</servlet-name>
+	 <url-pattern>/loginPage</url-pattern>
+ </servlet-mapping>
+ 
+ 
+ <servlet>
+	 <servlet-name>Welcome</servlet-name>
+	 <servlet-class>WelcomeUser</servlet-class>
+ </servlet>
+  
+ <servlet-mapping>
+	 <servlet-name>Welcome</servlet-name>
+	 <url-pattern>/welcome</url-pattern>
+ </servlet-mapping>
+
+</web-app>
+
+
+  
